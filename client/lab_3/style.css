@@ -139,6 +139,7 @@ form {
   flex: 1 2 auto;
   margin: 1rem;
   align-items: center;
+  max-width: 450px;
 }
 
 /*
@@ -238,7 +239,8 @@ div.carousel {
     - now make sure that images are _always_ square
     - ... there's a reason crop tools are popular in image editors
    */
-  width: 150px; 
+  width: 150px;
+  height: 100px; 
 }
 
 .prev,
@@ -262,5 +264,6 @@ div.carousel {
 
 .prev:hover,
 .next:hover {
+  background-color: rgb(246, 169, 93);
   /* Pick a good background colour for your hover pseudoclass */
 }
