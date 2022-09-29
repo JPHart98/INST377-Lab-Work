@@ -6,47 +6,41 @@
     <link rel="stylesheet" href="style.css">
     <title>Lab_4</title>
 </head>
-<div class="wrapper">
-    <div class="box 1">
-        <h1>Joseph Hartner's Labs for INST377</h1>
-    </div>
-    <div class="">
-        <div class="box">
-            <h1>Form Inputs</h1>
-            <div class="box">
-                <p>Restaurant Name:</p>
-                <div class="form">
-                    <input>
-                    <br><br>
-                    <button>Submit</button>
+<body> 
+       <!-- Whole page in wrapper class -->
+    <div class="wrapper">
+        <!-- header -->
+        <header class="header green thickBox">
+            <h1>Joseph Hartner's Labs for INST377</h1>
+        </header>
+        <div class="container">
+            <!-- LEft section of the box -->
+            <div class="left_section box orange">
+                <h1>Form Inputs</h1>
+                <form action="/api" class="box">
+                    <p>Restaurant Name:</p>
+                    <label for="resto"></label>
+                    <input type="text" name="resto" id="resto"/>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <!-- Right section of the box -->
+            <div class="right_section box orange">
+                <h1>Local Restaurants</h1>
+                <div class="box">
+                    <p>A list of restaurants from an API</p>
                 </div>
             </div>
         </div>
-    </div>
-    <br>
-    <div class="box">
-        <h1>Local Restaurants</h1>
-        <div class="box">
-            <p>A list of restaurants from an API</p>
-        </div>
-    </div>
-    <br>
-</div>
-
-    <!--Footer of the page-->
-    <div class="box footer subtitle">
-        <p>JPHart98 <a href="https://github.com/JPHart98/INST377-Lab-Work">GitHub Account</a></p>
-    </div>
-</div>
-</div>
-
-
-
-
-
-
-<body>
+        
     
+
+
+        <!--Footer of the page-->
+        <footer class="footer green thickBox">
+            <p>JPHart98 <a href="https://github.com/JPHart98/INST377-Lab-Work">GitHub Account</a></p>
+        </footer>
+    </div>
 </body>
 </html>
 <!-- Bring in your successful HTML/CSS from the Flexbox lab -->
