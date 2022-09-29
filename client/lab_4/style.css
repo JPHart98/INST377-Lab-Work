@@ -58,7 +58,6 @@ form {
 
 
 .wrapper {
-  background-color: lightpink;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -90,16 +89,11 @@ form {
 h1, p{
   color:blueviolet;
 }
-.header {
+.header h1{
   display: block;
   /* this will push other blocks out of the way */
-
-  /* colors */
-  background-color: #ffe08a;
-  color: #4a4a4a;
-
   /* shapes */
-  border-radius: 6px;
+
   font-size: 1.5rem;
   padding: 1.25rem;
   margin:0; /* removing the margin on h1 tags means the header pins to the top if we move */
@@ -123,28 +117,39 @@ h1, p{
 
   border: 2px dashed;
   border-radius: 4px;
-
-  /* width: fit-content; */
-  /* height:fit-content; */
+  width: fit-content;
+  height:fit-content;
   padding: 1.5rem;
   margin: 0 auto;
 }
+.thickBox {
+  border: 3px dashed;
+  border-radius: 4px;
+  padding: 1.5rem;
+  margin:0;
+}
 
 .left_section {
-  background-color: rgba(0, 139, 139, 0.8);
+  /* background-color: rgba(0, 139, 139, 0.8); */
   flex: 0 1 auto;
   margin: 1rem;
   padding: 1.5rem;
 }
 
 .right_section {
-  background-color: rgba(255, 224, 138, 0.7);
+  /* background-color: rgba(255, 224, 138, 0.7); */
   flex: 1 2 auto;
   margin: 1rem;
   align-items: center;
-  max-width: 450px;
+  display: flex;
+  flex-flow: column;
 }
-
+.green {
+  background-color: limegreen;
+}
+.orange {
+  background-color: orange;
+}
 /*
   This block is actually dependent on the "container" block having a flex set on it
   and the "wrapper" block displaying as a flex column with a "vertical height" (vh) of 100.
@@ -160,7 +165,7 @@ h1, p{
 }
 
 .footer a {
-  color:lightblue;
+  color:darkgreen;
   text-decoration: underline;
 }
 
@@ -308,10 +313,8 @@ form input {
     /* check it out by using your developer tools to shrink your screen-size */
     .container {
       background-color: rgba(204, 8, 162, 0.65);
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
-}
-.first-box {
-  display: flex;
-  justify-content: space-between;
-  position: sticky;
 }
