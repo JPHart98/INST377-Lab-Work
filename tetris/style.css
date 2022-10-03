@@ -32,7 +32,6 @@ h1, h2, h3, h4, h5 {
     height: 80px;
     display: flex;
     flex-wrap: wrap;
-    background-color: yellow;
     margin: auto;
 }
 .preview div {
